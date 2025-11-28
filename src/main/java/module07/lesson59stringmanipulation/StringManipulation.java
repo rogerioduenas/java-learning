@@ -1,4 +1,4 @@
-package lesson59stringmanipulation;
+package module07.lesson59stringmanipulation;
 
 public class StringManipulation {
 

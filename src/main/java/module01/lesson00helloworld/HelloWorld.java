@@ -1,4 +1,4 @@
-package lesson00helloworld;
+package module01.lesson00helloworld;
 
 public class HelloWorld {
 

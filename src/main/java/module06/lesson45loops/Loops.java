@@ -1,4 +1,4 @@
-package lesson45loops;
+package module06.lesson45loops;
 
 public class Loops {
 

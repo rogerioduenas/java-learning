@@ -1,4 +1,4 @@
-package lesson24dataOutput;
+package module04.lesson24dataOutput;
 
 import java.util.Locale;
 

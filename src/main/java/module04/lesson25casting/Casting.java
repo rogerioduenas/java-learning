@@ -1,4 +1,4 @@
-package lesson25casting;
+package module04.lesson25casting;
 
 public class Casting {
 

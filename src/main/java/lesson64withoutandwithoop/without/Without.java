@@ -1,4 +1,4 @@
-package lesson64withoutandwithoop;
+package lesson64withoutandwithoop.without;
 
 import java.util.Scanner;
 

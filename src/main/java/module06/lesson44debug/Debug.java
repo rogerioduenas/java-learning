@@ -1,4 +1,4 @@
-package lesson44debug;
+package module06.lesson44debug;
 
 import java.util.Scanner;
 

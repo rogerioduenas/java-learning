@@ -1,4 +1,4 @@
-package lesson26dataEntry;
+package module04.lesson26dataEntry;
 
 import java.util.Scanner;
 
