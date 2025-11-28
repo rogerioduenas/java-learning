@@ -1,4 +1,4 @@
-package lesson64withoutandwithoop.with.entities;
+package module08.lesson64withoutandwithoop.with.entities;
 
 public class Triangle {
 

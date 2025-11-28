@@ -1,28 +1,26 @@
-package lesson64withoutandwithoop.with;
-
-import lesson64withoutandwithoop.with.entities.Triangle;
+package module08.lesson64withoutandwithoop.without;
 
 import java.util.Scanner;
 
-public class Program {
+public class Without {
 
-  static void main(){
+  static void main() {
     Scanner sc = new Scanner(System.in);
-    Triangle x = new Triangle();
-    Triangle y = new Triangle();
-
+    double xA, xB, xC, yA, yB, yC;
     System.out.println("Enter the measures of triangle X");
-    x.a = sc.nextDouble();
-    x.b = sc.nextDouble();
-    x.c = sc.nextDouble();
-
+    xA = sc.nextDouble();
+    xB = sc.nextDouble();
+    xC = sc.nextDouble();
     System.out.println("Enter the measures of triangle X");
-    y.a = sc.nextDouble();
-    y.b = sc.nextDouble();
-    y.c = sc.nextDouble();
+    yA = sc.nextDouble();
+    yB = sc.nextDouble();
+    yC = sc.nextDouble();
 
-    double areaX = x.area();
-    double areaY = y.area();
+    double p = (xA + xB + xC) / 2;
+    double areaX = Math.sqrt(p * (p - xA) * (p - xB) * (p - xC));
+
+    p = (yA + yB + yC) / 2;
+    double areaY = Math.sqrt(p * (p - yA) * (p - yB) * (p - yC));
 
     System.out.printf("Area of triangle X is %.2f\n", areaX);
     System.out.printf("Area of triangle Y is %.2f\n", areaY);
