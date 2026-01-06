@@ -1,4 +1,4 @@
-package module10.exercises.ex_7.application;
+package module10.exercises.ex_7;
 
 import java.util.ArrayList;
 import java.util.List;
