@@ -1,0 +1,16 @@
+package module13.lesson145abstractmethods.entities;
+
+public class Circle extends Shape {
+
+  private Double radius;
+
+  public Circle(Color color, Double radius) {
+    super(color);
+    this.radius = radius;
+  }
+
+  @Override
+  public Double area() {
+    return Math.PI * radius * radius;
+  }
+}
