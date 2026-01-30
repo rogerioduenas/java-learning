@@ -1,5 +1,5 @@
-package module13.exercises.ex_2.entities;
 
+package module13.exercises.ex_2.entities;
 public class Employee {
 
   private String name;
