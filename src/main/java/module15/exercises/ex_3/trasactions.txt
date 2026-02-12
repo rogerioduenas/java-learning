@@ -1,0 +1,5 @@
+Keyboard Sale; 100.00
+Consulting Service; 300.00
+Mouse Purchase; 50.00
+Monitor Sale; 400.00
+Shipping Reimbursement; 10.00
