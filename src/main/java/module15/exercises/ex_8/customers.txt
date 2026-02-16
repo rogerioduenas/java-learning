@@ -1,0 +1,10 @@
+John Doe ,   john.doe@email.com
+,only_email@test.com
+Mary Smith  ,mary.smith@provider.com
+Charles Miller,
+,no_name_here@void.com
+Alice Brown     ,  alice.brown@company.com
+Peter Santos,
+,
+Richard Lewis , richard.lewis@web.com
+,missing_name@domain.com
