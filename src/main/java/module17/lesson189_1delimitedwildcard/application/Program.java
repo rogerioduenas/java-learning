@@ -1,8 +1,8 @@
-package module17.lesson189delimitedwildcard.application;
+package module17.lesson189_1delimitedwildcard.application;
 
-import module17.lesson189delimitedwildcard.entities.Circle;
-import module17.lesson189delimitedwildcard.entities.Rectangle;
-import module17.lesson189delimitedwildcard.entities.Shape;
+import module17.lesson189_1delimitedwildcard.entities.Circle;
+import module17.lesson189_1delimitedwildcard.entities.Rectangle;
+import module17.lesson189_1delimitedwildcard.entities.Shape;
 
 import java.util.ArrayList;
 import java.util.Arrays;

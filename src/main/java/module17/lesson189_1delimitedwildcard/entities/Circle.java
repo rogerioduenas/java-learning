@@ -1,4 +1,4 @@
-package module17.lesson189delimitedwildcard.entities;
+package module17.lesson189_1delimitedwildcard.entities;
 
 public class Circle implements Shape {
 
