@@ -1,0 +1,11 @@
+token,username,action
+TK-100,roger,CREATE
+TK-200,maria,CREATE
+TK-300,jose,CREATE
+TK-100,hacker,CREATE
+TK-200,maria,ACCESS
+TK-400,unknown,ACCESS
+TK-500,clara,CREATE
+TK-300,jose,EXPIRE
+TK-600,ana,CREATE
+TK-200,maria,EXPIRE
