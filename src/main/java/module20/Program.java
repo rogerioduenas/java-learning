@@ -20,5 +20,10 @@ public class Program {
     System.out.println();
     System.out.println("--- departments ---");
     Insert.insertMultipleDepartments();
+    System.out.println();
+
+    System.out.println("========== UPDATE DATA ==========");
+    System.out.println("--- sellers ---");
+    Update.updateSalaryByDepartment(1800.0, 1);
   }
 }
