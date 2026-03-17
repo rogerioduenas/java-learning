@@ -1,7 +1,7 @@
-package module20;
+package module20.JDBC_simple.repository;
 
-import module20.db.DB;
-import module20.db.DbException;
+import module20.db.config.DB;
+import module20.db.config.DbException;
 
 import java.sql.*;
 import java.text.ParseException;

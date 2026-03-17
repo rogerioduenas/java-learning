@@ -1,4 +1,10 @@
-package module20;
+package module20.JDBC_simple;
+
+import module20.JDBC_simple.extra.Transactions;
+import module20.JDBC_simple.repository.Delete;
+import module20.JDBC_simple.repository.Insert;
+import module20.JDBC_simple.repository.Read;
+import module20.JDBC_simple.repository.Update;
 
 import java.sql.SQLException;
 
@@ -25,5 +31,9 @@ public class Program {
     System.out.println("========== DELETE DATA ==========");
     System.out.println("--- departments ---");
     Delete.deleteDepartment(2);
+
+    System.out.println("========== TRANSACTIONS ==========");
+    System.out.println("--- sellers ---");
+    Transactions.transactions();
   }
 }

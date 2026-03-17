@@ -1,4 +1,4 @@
-package module20.db;
+package module20.db.config;
 
 import java.io.IOException;
 import java.io.InputStream;
