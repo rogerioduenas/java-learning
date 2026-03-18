@@ -13,6 +13,10 @@ public class Department implements Serializable {
     this.name = name;
   }
 
+  public Integer getId() {
+    return id;
+  }
+
   @Override
   public boolean equals(Object o) {
     if (o == null || getClass() != o.getClass()) return false;
