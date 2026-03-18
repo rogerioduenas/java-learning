@@ -12,6 +12,7 @@ import java.util.List;
 public class Program {
   public static void main(String[] args) {
     SellerDao sellerDao = DaoFactory.createSellerDao();
+
     System.out.println("==================== Seller ====================");
 
     System.out.println("----- findById -----");
@@ -36,9 +37,13 @@ public class Program {
     System.out.printf("Inserted! New id: %d\n", newSeller.getId());
 
     System.out.println("----- update -----");
-    seller = sellerDao.findById(42);
+    seller = sellerDao.findById(41);
     seller.setName("Anna");
     sellerDao.update(seller);
     System.out.printf("Updated completed! %s\n", sellerDao.findById(42));
+
+    System.out.println("----- deleteById -----");
+    sellerDao.deleteById(46);
+    System.out.println("Deleted completed!");
   }
 }
