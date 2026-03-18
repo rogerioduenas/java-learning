@@ -5,6 +5,7 @@ import module20.JDBC_DAO.model.dao.SellerDao;
 import module20.JDBC_DAO.model.entities.Department;
 import module20.JDBC_DAO.model.entities.Seller;
 
+import java.time.LocalDateTime;
 import java.util.List;
 
 
@@ -12,11 +13,14 @@ public class Program {
   public static void main(String[] args) {
     SellerDao sellerDao = DaoFactory.createSellerDao();
     System.out.println("==================== Seller ====================");
+
     System.out.println("----- findById -----");
     Seller seller = sellerDao.findById(3);
     System.out.println(seller);
+
     System.out.println("----- findByDepartment -----");
-    List<Seller> list = sellerDao.findByDepartment(new Department(2, null));
+    Department dep = new Department(2, null);
+    List<Seller> list = sellerDao.findByDepartment(dep);
     for (Seller s : list) {
       System.out.println(s);
     }
@@ -25,5 +29,10 @@ public class Program {
     for (Seller s : list) {
       System.out.println(s);
     }
+
+    System.out.println("----- insert -----");
+    Seller newSeller = new Seller(null, "Caio", "caio@caio.com", LocalDateTime.now(), 2500.00, dep);
+    sellerDao.insert(newSeller);
+    System.out.printf("Inserted! New id: %d\n", newSeller.getId());
   }
 }

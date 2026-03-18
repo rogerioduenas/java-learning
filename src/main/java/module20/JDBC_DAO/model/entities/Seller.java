@@ -23,6 +23,34 @@ public class Seller implements Serializable {
     this.department = department;
   }
 
+  public Integer getId() {
+    return id;
+  }
+
+  public void setId(Integer id) {
+    this.id = id;
+  }
+
+  public String getName() {
+    return name;
+  }
+
+  public String getEmail() {
+    return email;
+  }
+
+  public LocalDateTime getBirthDate() {
+    return birthDate;
+  }
+
+  public Double getBaseSalary() {
+    return baseSalary;
+  }
+
+  public Department getDepartment() {
+    return department;
+  }
+
   @Override
   public boolean equals(Object o) {
     if (o == null || getClass() != o.getClass()) return false;
