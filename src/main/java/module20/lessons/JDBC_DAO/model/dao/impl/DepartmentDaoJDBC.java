@@ -1,10 +1,10 @@
-package module20.JDBC_DAO.model.dao.impl;
+package module20.lessons.JDBC_DAO.model.dao.impl;
 
-import module20.JDBC_DAO.model.dao.DepartmentDao;
-import module20.JDBC_DAO.model.entities.Department;
-import module20.db.config.DB;
-import module20.db.config.DBIntegrityException;
-import module20.db.config.DbException;
+import module20.lessons.JDBC_DAO.model.dao.DepartmentDao;
+import module20.lessons.JDBC_DAO.model.entities.Department;
+import module20.lessons.db.DB;
+import module20.lessons.db.DBIntegrityException;
+import module20.lessons.db.DbException;
 
 import java.sql.*;
 import java.util.ArrayList;

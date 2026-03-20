@@ -1,8 +1,8 @@
-package module20.JDBC_DAO.application;
+package module20.lessons.JDBC_DAO.application;
 
-import module20.JDBC_DAO.model.dao.DaoFactory;
-import module20.JDBC_DAO.model.dao.DepartmentDao;
-import module20.JDBC_DAO.model.entities.Department;
+import module20.lessons.JDBC_DAO.model.dao.DaoFactory;
+import module20.lessons.JDBC_DAO.model.dao.DepartmentDao;
+import module20.lessons.JDBC_DAO.model.entities.Department;
 
 import java.util.List;
 

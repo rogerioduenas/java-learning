@@ -1,7 +1,7 @@
-package module20.JDBC_simple.extra;
+package module20.lessons.JDBC_simple.extra;
 
-import module20.db.config.DB;
-import module20.db.config.DbException;
+import module20.lessons.db.DB;
+import module20.lessons.db.DbException;
 
 import java.sql.Connection;
 import java.sql.SQLException;

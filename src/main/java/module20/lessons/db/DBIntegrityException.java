@@ -1,4 +1,4 @@
-package module20.db.config;
+package module20.lessons.db;
 
 public class DBIntegrityException extends RuntimeException {
   public DBIntegrityException(String message) {

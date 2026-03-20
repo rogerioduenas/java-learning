@@ -1,8 +1,8 @@
-package module20.JDBC_DAO.model.dao;
+package module20.lessons.JDBC_DAO.model.dao;
 
-import module20.JDBC_DAO.model.dao.impl.DepartmentDaoJDBC;
-import module20.JDBC_DAO.model.dao.impl.SellerDaoJDBC;
-import module20.db.config.DB;
+import module20.lessons.JDBC_DAO.model.dao.impl.DepartmentDaoJDBC;
+import module20.lessons.JDBC_DAO.model.dao.impl.SellerDaoJDBC;
+import module20.lessons.db.DB;
 
 public class DaoFactory {
 

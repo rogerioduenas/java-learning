@@ -1,6 +1,6 @@
-package module20.JDBC_simple.repository;
+package module20.lessons.JDBC_simple.repository;
 
-import module20.db.config.DB;
+import module20.lessons.db.DB;
 
 import java.sql.Connection;
 import java.sql.ResultSet;

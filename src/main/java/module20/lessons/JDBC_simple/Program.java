@@ -1,10 +1,10 @@
-package module20.JDBC_simple;
+package module20.lessons.JDBC_simple;
 
-import module20.JDBC_simple.extra.Transactions;
-import module20.JDBC_simple.repository.Delete;
-import module20.JDBC_simple.repository.Insert;
-import module20.JDBC_simple.repository.Read;
-import module20.JDBC_simple.repository.Update;
+import module20.lessons.JDBC_simple.extra.Transactions;
+import module20.lessons.JDBC_simple.repository.Delete;
+import module20.lessons.JDBC_simple.repository.Insert;
+import module20.lessons.JDBC_simple.repository.Read;
+import module20.lessons.JDBC_simple.repository.Update;
 
 import java.sql.SQLException;
 

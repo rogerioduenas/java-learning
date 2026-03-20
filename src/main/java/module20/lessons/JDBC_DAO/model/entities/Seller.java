@@ -1,4 +1,4 @@
-package module20.JDBC_DAO.model.entities;
+package module20.lessons.JDBC_DAO.model.entities;
 
 import java.io.Serializable;
 import java.time.LocalDateTime;

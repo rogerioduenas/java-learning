@@ -1,7 +1,7 @@
-package module20.JDBC_DAO.model.dao;
+package module20.lessons.JDBC_DAO.model.dao;
 
-import module20.JDBC_DAO.model.entities.Department;
-import module20.JDBC_DAO.model.entities.Seller;
+import module20.lessons.JDBC_DAO.model.entities.Department;
+import module20.lessons.JDBC_DAO.model.entities.Seller;
 
 import java.util.List;
 
