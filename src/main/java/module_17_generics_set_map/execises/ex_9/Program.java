@@ -1,0 +1,15 @@
+package module_17_generics_set_map.execises.ex_9;
+
+import module_17_generics_set_map.execises.ex_9.service.FilterService;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+public class Program {
+  public static void main(String[] args) {
+    List<Integer> list = new ArrayList<>(Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10));
+    List<Integer> numbers = FilterService.filter(list, n -> n > 5);
+    System.out.println(numbers);
+  }
+}
