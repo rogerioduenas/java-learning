@@ -6,14 +6,22 @@ public class Product {
   private int quantity;
 
   public Product(String name, double price, int quantity) {
+    if (name == null || name.isBlank()) {
+      throw new IllegalArgumentException("Product name cannot be null");
+    }
+    if (price < 0) {
+      throw new IllegalArgumentException("Product price cannot be negative");
+    }
+    if (quantity < 0) {
+      throw new IllegalArgumentException("Product quantity cannot be negative");
+    }
     this.name = name;
     this.price = price;
     this.quantity = quantity;
   }
 
   public Product(String name, double price) {
-    this.name = name;
-    this.price = price;
+    this(name, price, 0);
   }
 
   public String getName() {
@@ -37,13 +45,19 @@ public class Product {
   }
 
   public void addProducts(int quantity) {
+    if (quantity <= 0){
+      throw new IllegalArgumentException("Product quantity must be greater than 0");
+    }
     this.quantity += quantity;
   }
 
   public void removeProducts(int quantity) {
-    if (quantity > this.quantity) {
-      System.out.printf("It was not possible to remove the quantity of products from stock because the quantity is greater than the available stock, which is %d items.", this.quantity);
-      return;
+    if (quantity <= 0){
+      throw new IllegalArgumentException("Product quantity must be greater than 0");
+    }
+
+    if (quantity > this.quantity){
+      throw new IllegalArgumentException("Product quantity must be less than quantity");
     }
     this.quantity -= quantity;
   }
