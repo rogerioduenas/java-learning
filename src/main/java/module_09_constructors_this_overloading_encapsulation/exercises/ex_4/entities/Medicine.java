@@ -5,9 +5,15 @@ public class Medicine {
   private double price;
   private int quantity;
 
+  public Medicine(String name, int quantity) {
+    setName(name);
+    setInitialQuantity(quantity);
+    this.price = 0.0;
+  }
+
   public Medicine() {
-    this.name = "Undefined";
-    this.price = 0;
+    this.name = "Ibuprofen";
+    this.price = 0.0;
     this.quantity = 0;
   }
 
@@ -16,9 +22,8 @@ public class Medicine {
   }
 
   public void setName(String name) {
-    if (name == null || name.isEmpty()) {
-      System.out.println("Medicine name cannot be empty");
-      return;
+    if (name == null || name.isBlank()) {
+      throw new IllegalArgumentException("Medicine name cannot be null or blank");
     }
     this.name = name;
   }
@@ -29,25 +34,43 @@ public class Medicine {
 
   public void setPrice(double price) {
     if (price < 0) {
-      System.out.println("Medicine price cannot be negative");
-      return;
+      throw new IllegalArgumentException("Price cannot be negative");
     }
     this.price = price;
   }
 
+  public int getQuantity() {
+    return quantity;
+  }
+
   public void addStock(int quantity) {
+    if (quantity <= 0) {
+      throw new IllegalArgumentException("Quantity to add must be greater than zero");
+    }
     this.quantity += quantity;
   }
 
   public void removeStock(int quantity) {
-    if (this.quantity < quantity) {
-      System.out.printf("Sorry, you can't remove that much from stock. The total in stock is only %d.%n", this.quantity);
-      return;
+    if (quantity <= 0) {
+      throw new IllegalArgumentException("Quantity to remove must be greater than zero");
+    }
+    if (quantity > this.quantity) {
+      throw new IllegalArgumentException(
+          String.format("Insufficient stock. Current stock: %d, requested: %d", this.quantity, quantity)
+      );
     }
     this.quantity -= quantity;
   }
 
+  private void setInitialQuantity(int quantity) {
+    if (quantity < 0) {
+      throw new IllegalArgumentException("Initial quantity cannot be negative");
+    }
+    this.quantity = quantity;
+  }
+
+  @Override
   public String toString() {
     return String.format("Name: %s - Price: %.2f - Quantity: %d%n", this.name, this.price, this.quantity);
-  };
+  }
 }
