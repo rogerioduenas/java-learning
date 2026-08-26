@@ -6,9 +6,16 @@ public class Book {
   private double price;
 
   public Book(String isbn, String title, double price) {
+    validatePrice(price);
     this.isbn = isbn;
     this.title = title;
     this.price = price;
+  }
+
+  private void validatePrice(double price) {
+    if (price <= 0) {
+      throw new IllegalArgumentException("Price must be greater than zero");
+    }
   }
 
   public String getIsbn() {
@@ -28,10 +35,7 @@ public class Book {
   }
 
   public void setPrice(double price) {
-    if (price < 0) {
-      System.out.println("Price cannot be negative");
-      return;
-    }
+    validatePrice(price);
     this.price = price;
   }
 
