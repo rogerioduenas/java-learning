@@ -1,4 +1,4 @@
-package module_09_constructors_this_overloading_encapsulation.exercises.ex_7.vehiclesA;
+package module_09_constructors_this_overloading_encapsulation.exercises.ex_7.vehicles;
 
 public class Car extends Vehicle {
   public Car(String brand, String model, int year, String secretCode) {

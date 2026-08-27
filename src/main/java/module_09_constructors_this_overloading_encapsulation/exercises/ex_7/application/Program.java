@@ -1,8 +1,8 @@
 package module_09_constructors_this_overloading_encapsulation.exercises.ex_7.application;
 
-import module_09_constructors_this_overloading_encapsulation.exercises.ex_7.vehiclesA.Car;
-import module_09_constructors_this_overloading_encapsulation.exercises.ex_7.vehiclesA.Vehicle;
-import module_09_constructors_this_overloading_encapsulation.exercises.ex_7.vehiclesB.Truck;
+import module_09_constructors_this_overloading_encapsulation.exercises.ex_7.vehicles.Car;
+import module_09_constructors_this_overloading_encapsulation.exercises.ex_7.vehicles.Vehicle;
+import module_09_constructors_this_overloading_encapsulation.exercises.ex_7.vehicles.Truck;
 
 public class Program {
   public static void main(String[] args) {

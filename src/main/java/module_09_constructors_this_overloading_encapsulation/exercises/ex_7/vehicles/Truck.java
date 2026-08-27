@@ -1,6 +1,4 @@
-package module_09_constructors_this_overloading_encapsulation.exercises.ex_7.vehiclesB;
-
-import module_09_constructors_this_overloading_encapsulation.exercises.ex_7.vehiclesA.Vehicle;
+package module_09_constructors_this_overloading_encapsulation.exercises.ex_7.vehicles;
 
 public class Truck extends Vehicle {
 
