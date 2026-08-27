@@ -1,5 +1,7 @@
 package module_09_constructors_this_overloading_encapsulation.exercises.ex_9.entities;
 
+import utils.Validate;
+
 public class InventoryItem {
   private String name;
   private double unitPrice;
@@ -10,9 +12,7 @@ public class InventoryItem {
   }
 
   public void setName(String name) {
-    if (name == null || name.trim().isEmpty()) {
-      throw new IllegalArgumentException("Name cannot be null or empty");
-    }
+    Validate.notBlank(name, "Name cannot be null or empty");
     this.name = name;
   }
 
@@ -21,9 +21,7 @@ public class InventoryItem {
   }
 
   public void setUnitPrice(double unitPrice) {
-    if (unitPrice < 0) {
-      throw new IllegalArgumentException("Unit price cannot be negative");
-    }
+    Validate.isTrue(unitPrice >= 0, "Unit price cannot be negative");
     this.unitPrice = unitPrice;
   }
 
@@ -32,26 +30,18 @@ public class InventoryItem {
   }
 
   public void setQuantity(int quantity) {
-    if (quantity < 0) {
-      throw new IllegalArgumentException("Quantity cannot be negative");
-    }
+    Validate.isTrue(quantity >= 0, "Quantity cannot be negative");
     this.quantity = quantity;
   }
 
   public void increase(int quantity) {
-    if (quantity < 0) {
-      throw new IllegalArgumentException("Increase amount cannot be negative");
-    }
+    Validate.positive(quantity, "Increase amount must be greater than zero");
     this.quantity += quantity;
   }
 
   public void decrease(int quantity) {
-    if (quantity < 0) {
-      throw new IllegalArgumentException("Decrease amount cannot be negative");
-    }
-    if (this.quantity - quantity < 0) {
-      throw new IllegalArgumentException("Quantity cannot go below zero");
-    }
+    Validate.positive(quantity, "Decrease amount must be greater than zero");
+    Validate.isTrue(this.quantity >= quantity, "Quantity cannot go below zero");
     this.quantity -= quantity;
   }
 
@@ -59,6 +49,7 @@ public class InventoryItem {
     return this.quantity * this.unitPrice;
   }
 
+  @Override
   public String toString() {
     return String.format(
         "Name: %s%nUnit price: %.2f%nQuantity: %d%nTotal Value in stock: %.2f%n",
